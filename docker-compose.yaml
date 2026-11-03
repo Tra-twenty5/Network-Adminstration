@@ -1,0 +1,14 @@
+name: neth_sopheaktra
+services: 
+
+  admin:
+    build: ./admin
+    container_name: neth_sopheaktra-admin
+    ports:
+      - "8156:80"
+      
+  client:
+    build: ./client
+    container_name: neth_sopheaktra-client
+    ports:
+      - "8157:80"
